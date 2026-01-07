@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App - Built With HTML, CSS & JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="person-selector">
+      <button
+        class="button person-selector-button active-person"
+        id="daniel-selector"
+      >
+        Daniel
+      </button>
+      <button class="button person-selector-button" id="modesta-selector">
+        Modesta
+      </button>
+    </div>
+    <div class="chat-container">
+      <h2 class="chat-header">Daniel is chatting...</h2>
+      <div class="chat-messages">
+        <div class="message blue-bg">
+          <div class="message-sender">Daniel</div>
+          <div class="message-text">
+            Hello beautiful Modesta, what's up? What are you upto?
+          </div>
+          <div class="message-timestamp">01:24 PM</div>
+        </div>
+        <div class="message gray-bg">
+          <div class="message-sender">Modesta</div>
+          <div class="message-text">
+            Hi, Danny. Nothing much, just hassle and hustles of the streets of
+            Lagos!
+          </div>
+          <div class="message-timestamp">01:26 PM</div>
+        </div>
+      </div>
+      <form class="chat-input-form">
+        <input
+          type="text"
+          class="chat-input"
+          required
+          placeholder="Type here, Daniel..."
+        />
+        <button type="submit" class="button send-button">Send</button>
+      </form>
+
+      <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
